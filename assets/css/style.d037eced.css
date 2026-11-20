@@ -1,10 +1,14 @@
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-display:swap;src:url("/assets/fonts/bricolage-grotesque-latin-wght.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("/assets/fonts/inter-latin-wght.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/jetbrains-mono-latin-400.woff2") format("woff2")}
+@font-face{font-family:"Inter Fallback";src:local("Arial"),local("Helvetica Neue"),local("Liberation Sans");size-adjust:107.4%;ascent-override:90.2%;descent-override:22.5%;line-gap-override:0%}
 :root{
   --bg:#EDF1EE;--surface:#F8FAF8;--ink:#13231F;--muted:#43584F;--line:#C9D5CF;
   --accent:#0B6B63;--accent-ink:#FFFFFF;--flag:#E5B416;
   --easy:#1E7A4C;--mod:#8A5F00;--hard:#A93528;
-  --display:"Avenir Next","Segoe UI Variable Display","Segoe UI",system-ui,sans-serif;
-  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
-  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI Variable Display","Segoe UI",system-ui,sans-serif;
+  --body:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   color-scheme:light dark;
 }
 @media (prefers-color-scheme:dark){
@@ -35,6 +39,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .meta-line{font-family:var(--mono);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
 h1,h2,h3{font-family:var(--display);line-height:1.12;letter-spacing:-.02em;text-wrap:balance}
 h1{font-size:clamp(2.3rem,7vw,4.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.03;margin:0 0 20px;max-width:15ch}
+.hero h1{font-size:clamp(2.1rem,6vw,3.8rem);max-width:20ch}
 .page-head h1{font-size:clamp(2rem,5.5vw,3.2rem);max-width:22ch}
 h2{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:750;margin:0 0 12px}
 h3{font-size:1.3rem;font-weight:700;margin:0}
@@ -106,6 +111,7 @@ td{font-variant-numeric:tabular-nums}
 .checklist span{color:var(--muted);font-size:.95rem}
 
 .faq{max-width:760px}
+.faq-h{font-size:1.3rem;margin:2.4rem 0 4px}
 details{border-bottom:1px solid var(--line)}
 summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-family:var(--display);font-weight:700;font-size:1.1rem;position:relative}
 summary::-webkit-details-marker{display:none}
