@@ -1,0 +1,1 @@
+# ghat-trails-karnataka-trekking
