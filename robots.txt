@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ghat-trails-karnataka-trekking.netlify.app/sitemap.xml
